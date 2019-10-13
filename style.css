@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Grenze|Mansalva&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(224, 205, 205);
+  width: 100vw;
+}
+
+.clock {
+  text-align: center;
+  border: 3px solid transparent;
+  background: rgb(238, 237, 237);
+  border-image: linear-gradient(
+    45deg,
+    #40e0d0,
+    #ff8c00,
+    #ff0080,
+    #40e0d0,
+    #ff8c00,
+    #ff0080
+  );
+  border-image-slice: 1;
+  padding: 10%;
+}
+
+.clock h1 {
+  color: #1b040d;
+  font-family: "Grenze", Courier, monospace;
+  font-size: 3rem;
+  letter-spacing: 0.7rem;
+}
+
+.clock h3 {
+  color: #e95c5c;
+  margin-top: 2rem;
+  font-family: "Mansalva", Courier, monospace;
+  font-size: 3rem;
+}
+
+.clock .status {
+  margin-top: 7px;
+  color: rgb(0, 0, 0);
+  word-spacing: 0.7rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+}
+
+/*Night Mode Variables*/
+
+.containerNight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(37, 33, 33);
+  width: 100vw;
+}
+
+.clockNight {
+  text-align: center;
+  border: 3px solid transparent;
+  background: rgb(34, 29, 29);
+  border-image: linear-gradient(
+    45deg,
+    #40e0d0,
+    #ff8c00,
+    #ff0080,
+    #40e0d0,
+    #ff8c00,
+    #ff0080
+  );
+  border-image-slice: 1;
+  padding: 10%;
+}
+
+.clockNight h1 {
+  color: whitesmoke;
+  font-family: "Grenze", Courier, monospace;
+  font-size: 3rem;
+  letter-spacing: 0.7rem;
+}
+
+.clockNight h3 {
+  color: #00ff15;
+  margin-top: 2rem;
+  font-family: "Mansalva", Courier, monospace;
+  font-size: 3rem;
+}
+
+.clockNight .status {
+  margin-top: 7px;
+  color: whitesmoke;
+  word-spacing: 0.7rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+}
+
+@media only screen and (max-width: 600px) {
+  .clock {
+    height: 100vh;
+  }
+
+  .clockNight {
+    height: 100vh;
+  }
+}
